@@ -1,0 +1,31 @@
+.row{
+    border-bottom: 1px solid #dcd9d9;
+}
+
+h2{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 50px;
+    
+}
+.information{
+    display: inline;
+  
+    padding: 80px;
+    font-family: 'Poppins', 'sans-serif';
+    
+    
+}
+p{
+    padding: 30px;
+}
+img{
+    float: left;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    object-position:30% 70%;
+
+  
+    object-fit:cover;
+  border-radius: 50%;
+}
