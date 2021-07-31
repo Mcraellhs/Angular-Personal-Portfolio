@@ -2,7 +2,7 @@
     
     height: 800px;
     
-    background: url("/./assets/programing.jpg");
+    background-image: url("/../assets/programing.jpg");
     background-size: cover;
 
     

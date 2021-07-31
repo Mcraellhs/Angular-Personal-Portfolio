@@ -1,3 +1,7 @@
+.skillcomponent{
+    background-color: rgb(224, 229, 255);
+    
+}
 
 
 h2{
@@ -10,11 +14,12 @@ h3{
 .skillclass{
     
     border-bottom: 1px solid #dcd9d9;
+    background-color: rgb(224, 229, 255);
+
    
    
    padding: 20px;
 }
-
 
 .progress{
     margin-bottom: 30px;
@@ -30,3 +35,66 @@ ul{
 li{
     font-size: 20px;
 }
+
+svg{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    
+    
+}
+
+
+.icondiv{
+    
+    float: left;
+}
+
+.skillcol{
+    display: block;
+}
+
+.row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(224, 229, 255);
+}
+
+.list{
+
+    width:100%;
+    text-align:center;
+   
+    
+  }
+ 
+  .list-container {
+      float: left;
+      display: table;
+      max-width: 400px;
+      margin: 0 auto;
+     
+  }
+  
+  .list-item{
+    display: table-row;
+    width:250px;
+  }
+
+  #list-item:hover{
+    background-color: rgb(247, 247, 247);
+  }
+
+  
+  
+  .list-item-cell {
+      display: table-cell;
+  }
+  
+  .list-item-cell:first-child {
+      padding-right: 10px;
+      width: 30px;
+  }
