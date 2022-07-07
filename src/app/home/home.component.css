@@ -1,14 +1,16 @@
-.home-content{
+.home-content {
     
     height: 800px;
-    
-    background-image: url("/../assets/programing.jpg");
+    overflow: hidden;
     background-size: cover;
 
-    
+}
 
+
+.home-bg{
+    height: 800px;
+    width: 100%;
     
-  
 }
 
 .main-content{
@@ -26,8 +28,17 @@
     z-index:10;
     top:30%;
     right:5%;
-    
 }
+svg{
+    transition: width 1s, height 1s;
+
+}
+svg:hover{
+    width: 80px;
+    height: 80px;
+}
+
+
 .profile-img{
  
   width: 200px;
@@ -41,13 +52,17 @@
   margin-top: 90px;
   
    border-radius: 50%;
-}
-.home-overlay{
-    position:absolute;
-    
-    
-  
+   transition: width 2s, height 2s;
 
+}
+.profile-img:hover{
+    width: 250px;
+    height: 250px;
+}
+
+.home-overlay{
+    overflow: hidden;
+    position:absolute;
     height:100%;
     width:100%;
     top:0;
@@ -58,13 +73,26 @@
     z-index:1
 }
 
+@keyframes fullName {
+    0%   {font-size: 0px}
+    
+    100% {font-size: 100px}
+  }
+
 h2{
+    animation-name: fullName;
+    animation-duration: 3s;
     margin-top: 40px;
     margin-right: 20px;
     font-size: 100px;
     color: white;
     font-family: 'Kaushan Script', cursive;
+    
+
 }
+
+
+
 h3{
     margin-top: 10px;
     margin-bottom: 30px;
@@ -91,15 +119,18 @@ h3{
     text-decoration:none
 }
 
-header{
-    position:absolute;
+.header{
+    
+    overflow: hidden;
+    position:fixed;
     top:0;
     left:0;
     right:0;
     text-align:center;
-    z-index:10;
+    z-index:120;
+    
     }
-  header ul{
+  .header ul{
       display:inline-block;
     background:#fff;
     text-align:center;
@@ -107,26 +138,34 @@ header{
     border-bottom-right-radius:4px;
     border-bottom-left-radius:4px
 }
-  header li{display:inline-block}
-  header a{
+  .header li{
+    display:inline-block
+    
+}
+  .header a{
+    transition: 1s background-color, font-weight;
       display:block;
       color:red;
       padding:10px
     }
-  header a:hover{
-      color:#fff;
+  .header a:hover{
+    color:#fff;
     text-decoration:none;
     background:#ff7961;
-    border-radius:4px
+    border-radius:4px;
+    font-weight: 600;
 }
-  header a:focus{
+  .header a:focus{
       color:#fff;
       background: #ff7961;
-    text-decoration:none
+      text-decoration:none;
+      
+      
+
 }
-    header.active{
+    .header.active{
         display:block}
-  header.sticky{
+  .header.sticky{
       position:fixed;
     z-index:999
 }

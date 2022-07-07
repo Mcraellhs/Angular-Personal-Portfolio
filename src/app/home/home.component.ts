@@ -25,6 +25,8 @@ onResize(event) {
 
   constructor() { }
 
+
+
   ngOnInit(): void {
   }
 
@@ -33,6 +35,5 @@ this.toggle=false;
 
   }
 
-  
 
 }

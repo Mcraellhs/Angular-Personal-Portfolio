@@ -20,7 +20,10 @@
     margin-bottom: 30px;
     padding: 10px;
 
+
 }
+
+
 
 img{
     
@@ -28,8 +31,12 @@ img{
     height: 200px;
     object-fit:cover;
     object-position:50% 50%;
-
-    
+    transition: width 1s, height 1s;
+}
+img:hover{
+    width: 355px;
+    height: 210px;
+    overflow: hidden !important;
 }
 
 .img-case{

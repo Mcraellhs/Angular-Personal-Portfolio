@@ -1,6 +1,6 @@
 .row{
     border-bottom: 1px solid #dcd9d9;
-    background: white;
+    background: #f2f2f5;
 }
 
 h2{
@@ -9,24 +9,24 @@ h2{
     
 }
 
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-    padding-left: 1.5rem;
-    
-}
-
 span{
     font-family: 'Poppins',sans-serif!important;
     font-size: 1rem;
     font-weight: 600;
     color: #5c7488;
+    margin-top: 10px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
 }
 
  /* Timeline vertical line */
 ul.timeline:before {
     content: ' ';
-    background: #f2f2f5;
+    background: white;
     display: inline-block;
     position: absolute;
     left: 16px;
@@ -34,12 +34,10 @@ ul.timeline:before {
     height: 100%;
     z-index: 400;
     border-radius: 1rem;
-    
 }
 
 li.timeline-item {
     margin: 20px 0;
-    
 }
 
 /* Timeline item arrow */
@@ -60,7 +58,7 @@ li.timeline-item::before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #f2f2f5;
+    border: 3px solid white;
     left: 2px;
     width: 30px;
     height: 30px;
@@ -70,25 +68,25 @@ li.timeline-item::before {
 
 
 
-.education-content{
+.experience-content{
    
     background:#fff;
     
     border-radius:3px;
     text-align:left
 }
-.education-content h3{
+.experience-content h3{
     
     color:#374054;
     display:inline-block;
     margin:0
 }
-.education-content h4{
+.experience-content h4{
    
     color:#7e8890;
     margin:0 0 15px 0
 }
-.education-content p{
+.experience-content p{
     color:#74808a;
    
 }

@@ -42,9 +42,13 @@ svg{
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-   
+    transition: width 1s, height 1s;
     
     
+}
+svg:hover{
+    width: 110px;
+    height: 110px;
 }
 
 
@@ -82,10 +86,13 @@ svg{
   .list-item{
     display: table-row;
     width:250px;
-  }
+    
 
+  }
   #list-item:hover{
     background-color: rgb(247, 247, 247);
+    width: 270px;
+    
   }
 
   
@@ -98,3 +105,5 @@ svg{
       padding-right: 10px;
       width: 30px;
   }
+
+  
