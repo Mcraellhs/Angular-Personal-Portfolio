@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   successMessage="Message sent successfully, I will contact you in a short period of time";
   errorMessage="Failed to send a message";
   messageResponseTitle=""
+  showMsg:boolean=false;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -25,14 +26,22 @@ export class ContactComponent implements OnInit {
       message
     }).pipe(
       catchError((error) => {
-        this.messageResponseTitle = this.errorMessage
+        this.messageResponseTitle = this.errorMessage;
+        this.showMessage()
         return []; 
       })
     ).subscribe((x) => {
+      this.showMessage()
       this.messageResponseTitle = this.successMessage;
     });
 
+  }
 
+  showMessage(){
+    this.showMsg=true;
+    setTimeout(()=>{
+      this.showMsg=false;
+    },5000)
   }
 
 }

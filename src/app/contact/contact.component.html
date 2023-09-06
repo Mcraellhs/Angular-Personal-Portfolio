@@ -1,15 +1,17 @@
 <div class="row">
 
-
+  <div *ngIf="showMsg" class="info-msg">
+    <p>{{messageResponseTitle}}</p>
+  </div>
     <div class="col-md-12">
         <div id="contact">
-            <p style="color: white;">{{messageResponseTitle}}</p>
+           
             <h2>Get in Touch</h2>
             <div id="contact-form">
                     <input #email type="email" placeholder="Your email" required>
                     <textarea #message name="message" placeholder="Your message" required></textarea>
                     <button (click)="sendEmailMessage(email.value,message.value)">Send</button>
-                    <h2 class="mt-3">Phone number: +(387)60 333 8576</h2>
+                    <h3 class="mt-3">Phone number: +(387)60 333 8576</h3>
             </div>
             
         </div>
